@@ -4,11 +4,11 @@ BluePay iOS SDK for credit card and Apple Pay payments
 ## Overview
 This repository contains a sample iOS app to be used to accept credit card as well as Apple Pay payments through a BluePay gateway account as well as an SDK to handle said payments.
 You will need:
-- An Apple Merchant ID
 - A BluePay Gateway account
+- An Apple Merchant ID (if processing Apple Pay)
 
 ## Usage
-After you've set up the appropriate entitlement for Apple Pay in your iOS app, the only thing left to do is to input your BluePay gateway information. In the BluePay.m/BluePay.swift file, you will need to set a few merchant-specific values, namely;
+After you've set up the appropriate entitlement in your iOS app, the only thing left to do is to input your BluePay gateway information. In the BluePay.m/BluePay.swift file, you will need to set a few merchant-specific values, namely;
 - Your Apple Merchant ID
 - Your BluePay gateway Account ID
 - Your BluePay gateway Secret Key
