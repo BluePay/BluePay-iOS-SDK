@@ -33,7 +33,7 @@ Also, if you are planning to process Apple Pay payments, you will need to input 
 ```
     
 ## Additional App Setup For Apple Pay
-The sample iOS app requires the shipping and billing information for the customer. To change this, edit the following lines in your ApplePayController.m/ApplePayController.swift file.<br>
+The sample iOS app requires the shipping and billing information for the customer. To change this, edit the following lines in your ApplePayController.m/ApplePayController.swift file.
 
 ```
 @IBAction func buttonTapped(sender: UIButton) {
@@ -50,7 +50,8 @@ Also make sure that the currency code, country, and card types that you accept a
     request.supportedNetworks = [PKPaymentNetworkAmex, PKPaymentNetworkMasterCard, PKPaymentNetworkVisa]
 ```
 
-Finally, don't forget to add the item(s) that your customer is paying for in the PKPaymentRequest<br>
+Finally, don't forget to add the item(s) that your customer is paying for in the PKPaymentRequest
+
 ```
     request.paymentSummaryItems = [widget1, widget2, total]
 }
