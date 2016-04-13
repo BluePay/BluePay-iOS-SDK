@@ -3,6 +3,7 @@ BluePay iOS SDK for credit card and Apple Pay payments
 
 ## Overview
 This repository contains a sample iOS app to be used to accept credit card as well as Apple Pay payments through a BluePay gateway account as well as an SDK to handle said payments. Included in this repository are sample projects for both Objective-C and Swift. These projects were built and tested on iOS 9.3.
+
 You will need:
 - A BluePay Gateway account
 - An Apple Merchant ID (if processing Apple Pay)
