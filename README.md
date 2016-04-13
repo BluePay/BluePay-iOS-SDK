@@ -15,8 +15,8 @@ After you've set up the appropriate entitlement for Apple Pay in your iOS app, t
 - Your transaction mode to process either test or live transactions
 - Your transaction type of Auth or Sale.
 
-`- (IBAction)buttonTapped:(UIButton *)sender {`<br>
-<b>`request.merchantIdentifier = @"Your Merchant ID here";`<br></b>
+`@IBAction func buttonTapped(sender: UIButton) {`<br>
+<b>`request.merchantIdentifier = "Your Merchant ID Here"`<br></b>
 `}`<br>
 
 `class BluePay {`<br>
