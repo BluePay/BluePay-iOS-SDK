@@ -14,7 +14,7 @@ After you've set up the appropriate entitlement in your iOS app, the only thing 
 - Your transaction mode to process either test or live transactions
 - Your transaction type of Auth or Sale.
 
-```
+```swift
 class BluePay {
     var bluepaySetup = [String: String]()
     var AccountID: String = "Merchant's Account ID Here" // 12 digit Account ID
@@ -25,7 +25,7 @@ class BluePay {
     
 Also, if you are planning to process Apple Pay payments, you will need to input your Merchant Identifier in the ApplePayController.m/ApplePayController.swift file:
 
-```
+```swift
 @IBAction func buttonTapped(sender: UIButton) {
     ...
     request.merchantIdentifier = "Your Merchant ID Here"
@@ -35,7 +35,7 @@ Also, if you are planning to process Apple Pay payments, you will need to input 
 ## Additional App Setup For Apple Pay
 The sample iOS app requires the shipping and billing information for the customer. To change this, edit the following lines in your ApplePayController.m/ApplePayController.swift file.
 
-```
+```swift
 @IBAction func buttonTapped(sender: UIButton) {
     ...
     request.requiredShippingAddressFields = .All
@@ -44,7 +44,7 @@ The sample iOS app requires the shipping and billing information for the custome
 
 Also make sure that the currency code, country, and card types that you accept are included as well
 
-```
+```swift
     request.countryCode = "US"
     request.currencyCode = "USD"
     request.supportedNetworks = [PKPaymentNetworkAmex, PKPaymentNetworkMasterCard, PKPaymentNetworkVisa]
@@ -52,7 +52,7 @@ Also make sure that the currency code, country, and card types that you accept a
 
 Finally, don't forget to add the item(s) that your customer is paying for in the PKPaymentRequest
 
-```
+```swift
     request.paymentSummaryItems = [widget1, widget2, total]
 }
 ```
