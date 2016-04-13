@@ -1,0 +1,454 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		8805F6F91CAD7B2D007CCE40 /* AudioToolbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8805F6F81CAD7B2D007CCE40 /* AudioToolbox.framework */; };
+		8805F6FB1CAD7B37007CCE40 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8805F6FA1CAD7B37007CCE40 /* Foundation.framework */; };
+		8805F6FD1CAD7B73007CCE40 /* MessageUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8805F6FC1CAD7B73007CCE40 /* MessageUI.framework */; };
+		8805F6FF1CAD7B7C007CCE40 /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8805F6FE1CAD7B7C007CCE40 /* AVFoundation.framework */; };
+		8805F7011CAD7BDF007CCE40 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8805F7001CAD7BDF007CCE40 /* UIKit.framework */; };
+		8805F7031CAD7BE6007CCE40 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8805F7021CAD7BE6007CCE40 /* CoreGraphics.framework */; };
+		8805F70A1CAD7DAA007CCE40 /* UMCardData.m in Sources */ = {isa = PBXBuildFile; fileRef = 8805F7091CAD7DAA007CCE40 /* UMCardData.m */; };
+		8805F70D1CAD7EB1007CCE40 /* SwipeController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8805F70C1CAD7EB1007CCE40 /* SwipeController.m */; };
+		8805F70F1CAD7F5F007CCE40 /* IDTECH_UniMag.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 8805F70E1CAD7F5F007CCE40 /* IDTECH_UniMag.a */; };
+		886A9B7F1CA07E500074DA81 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 886A9B6E1CA07E500074DA81 /* AppDelegate.m */; };
+		886A9B801CA07E500074DA81 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 886A9B6F1CA07E500074DA81 /* Assets.xcassets */; };
+		886A9B831CA07E500074DA81 /* BluePay.m in Sources */ = {isa = PBXBuildFile; fileRef = 886A9B731CA07E500074DA81 /* BluePay.m */; };
+		886A9B841CA07E500074DA81 /* BluePayRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = 886A9B751CA07E500074DA81 /* BluePayRequest.m */; };
+		886A9B851CA07E500074DA81 /* BluePayResponse.m in Sources */ = {isa = PBXBuildFile; fileRef = 886A9B771CA07E500074DA81 /* BluePayResponse.m */; };
+		886A9B861CA07E500074DA81 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 886A9B781CA07E500074DA81 /* Images.xcassets */; };
+		886A9B881CA07E500074DA81 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 886A9B7A1CA07E500074DA81 /* main.m */; };
+		886A9B891CA07E500074DA81 /* UIMonthYearPicker.m in Sources */ = {isa = PBXBuildFile; fileRef = 886A9B7C1CA07E500074DA81 /* UIMonthYearPicker.m */; };
+		886A9B8A1CA07E500074DA81 /* ApplePayController.m in Sources */ = {isa = PBXBuildFile; fileRef = 886A9B7E1CA07E500074DA81 /* ApplePayController.m */; };
+		886A9B8E1CA080CE0074DA81 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 886A9B8C1CA080CE0074DA81 /* LaunchScreen.xib */; };
+		886A9B911CA080D20074DA81 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 886A9B8F1CA080D20074DA81 /* Main.storyboard */; };
+		886A9B951CA1B7EA0074DA81 /* ProcessController.m in Sources */ = {isa = PBXBuildFile; fileRef = 886A9B941CA1B7EA0074DA81 /* ProcessController.m */; };
+		889E8BD31CAF047200E84E49 /* MediaPlayer.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 889E8BD21CAF047200E84E49 /* MediaPlayer.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		8805F6F81CAD7B2D007CCE40 /* AudioToolbox.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AudioToolbox.framework; path = System/Library/Frameworks/AudioToolbox.framework; sourceTree = SDKROOT; };
+		8805F6FA1CAD7B37007CCE40 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		8805F6FC1CAD7B73007CCE40 /* MessageUI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MessageUI.framework; path = System/Library/Frameworks/MessageUI.framework; sourceTree = SDKROOT; };
+		8805F6FE1CAD7B7C007CCE40 /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
+		8805F7001CAD7BDF007CCE40 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		8805F7021CAD7BE6007CCE40 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		8805F7081CAD7DA3007CCE40 /* UMCardData.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = UMCardData.h; path = "BluePay iOS SDK/UMCardData.h"; sourceTree = "<group>"; };
+		8805F7091CAD7DAA007CCE40 /* UMCardData.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = UMCardData.m; path = "BluePay iOS SDK/UMCardData.m"; sourceTree = "<group>"; };
+		8805F70B1CAD7EAA007CCE40 /* SwipeController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = SwipeController.h; path = "BluePay iOS SDK/SwipeController.h"; sourceTree = "<group>"; };
+		8805F70C1CAD7EB1007CCE40 /* SwipeController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = SwipeController.m; path = "BluePay iOS SDK/SwipeController.m"; sourceTree = "<group>"; };
+		8805F70E1CAD7F5F007CCE40 /* IDTECH_UniMag.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = IDTECH_UniMag.a; path = "BluePay iOS SDK/IDTECH_UniMag.a"; sourceTree = "<group>"; };
+		8805F7101CAD7F6D007CCE40 /* uniMag.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = uniMag.h; path = "BluePay iOS SDK/uniMag.h"; sourceTree = "<group>"; };
+		8838492D1C99C17D00B6BC81 /* BluePay iOS SDK.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "BluePay iOS SDK.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		886A9B6D1CA07E500074DA81 /* AppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = AppDelegate.h; path = "BluePay iOS SDK/AppDelegate.h"; sourceTree = "<group>"; };
+		886A9B6E1CA07E500074DA81 /* AppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = AppDelegate.m; path = "BluePay iOS SDK/AppDelegate.m"; sourceTree = "<group>"; };
+		886A9B6F1CA07E500074DA81 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; name = Assets.xcassets; path = "BluePay iOS SDK/Assets.xcassets"; sourceTree = "<group>"; };
+		886A9B721CA07E500074DA81 /* BluePay.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = BluePay.h; path = "BluePay iOS SDK/BluePay.h"; sourceTree = "<group>"; };
+		886A9B731CA07E500074DA81 /* BluePay.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = BluePay.m; path = "BluePay iOS SDK/BluePay.m"; sourceTree = "<group>"; };
+		886A9B741CA07E500074DA81 /* BluePayRequest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = BluePayRequest.h; path = "BluePay iOS SDK/BluePayRequest.h"; sourceTree = "<group>"; };
+		886A9B751CA07E500074DA81 /* BluePayRequest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = BluePayRequest.m; path = "BluePay iOS SDK/BluePayRequest.m"; sourceTree = "<group>"; };
+		886A9B761CA07E500074DA81 /* BluePayResponse.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = BluePayResponse.h; path = "BluePay iOS SDK/BluePayResponse.h"; sourceTree = "<group>"; };
+		886A9B771CA07E500074DA81 /* BluePayResponse.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = BluePayResponse.m; path = "BluePay iOS SDK/BluePayResponse.m"; sourceTree = "<group>"; };
+		886A9B781CA07E500074DA81 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; name = Images.xcassets; path = "BluePay iOS SDK/Images.xcassets"; sourceTree = "<group>"; };
+		886A9B791CA07E500074DA81 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = Info.plist; path = "BluePay iOS SDK/Info.plist"; sourceTree = "<group>"; };
+		886A9B7A1CA07E500074DA81 /* main.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = main.m; path = "BluePay iOS SDK/main.m"; sourceTree = "<group>"; };
+		886A9B7B1CA07E500074DA81 /* UIMonthYearPicker.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = UIMonthYearPicker.h; path = "BluePay iOS SDK/UIMonthYearPicker.h"; sourceTree = "<group>"; };
+		886A9B7C1CA07E500074DA81 /* UIMonthYearPicker.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = UIMonthYearPicker.m; path = "BluePay iOS SDK/UIMonthYearPicker.m"; sourceTree = "<group>"; };
+		886A9B7D1CA07E500074DA81 /* ApplePayController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ApplePayController.h; path = "BluePay iOS SDK/ApplePayController.h"; sourceTree = "<group>"; };
+		886A9B7E1CA07E500074DA81 /* ApplePayController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ApplePayController.m; path = "BluePay iOS SDK/ApplePayController.m"; sourceTree = "<group>"; };
+		886A9B8B1CA07F000074DA81 /* BluePay iOS SDK.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.xml; name = "BluePay iOS SDK.entitlements"; path = "BluePay iOS SDK/BluePay iOS SDK.entitlements"; sourceTree = "<group>"; };
+		886A9B8D1CA080CE0074DA81 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = "BluePay iOS SDK/Base.lproj/LaunchScreen.xib"; sourceTree = "<group>"; };
+		886A9B901CA080D20074DA81 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = "BluePay iOS SDK/Base.lproj/Main.storyboard"; sourceTree = "<group>"; };
+		886A9B941CA1B7EA0074DA81 /* ProcessController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ProcessController.m; path = "BluePay iOS SDK/ProcessController.m"; sourceTree = "<group>"; };
+		886A9B961CA1B7FC0074DA81 /* ProcessController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = ProcessController.h; path = "BluePay iOS SDK/ProcessController.h"; sourceTree = "<group>"; };
+		889E8BD21CAF047200E84E49 /* MediaPlayer.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MediaPlayer.framework; path = System/Library/Frameworks/MediaPlayer.framework; sourceTree = SDKROOT; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		8838492A1C99C17D00B6BC81 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				889E8BD31CAF047200E84E49 /* MediaPlayer.framework in Frameworks */,
+				8805F6FF1CAD7B7C007CCE40 /* AVFoundation.framework in Frameworks */,
+				8805F7011CAD7BDF007CCE40 /* UIKit.framework in Frameworks */,
+				8805F6FD1CAD7B73007CCE40 /* MessageUI.framework in Frameworks */,
+				8805F7031CAD7BE6007CCE40 /* CoreGraphics.framework in Frameworks */,
+				8805F6FB1CAD7B37007CCE40 /* Foundation.framework in Frameworks */,
+				8805F70F1CAD7F5F007CCE40 /* IDTECH_UniMag.a in Frameworks */,
+				8805F6F91CAD7B2D007CCE40 /* AudioToolbox.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		8805F7061CAD7CA5007CCE40 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				889E8BD21CAF047200E84E49 /* MediaPlayer.framework */,
+				8805F6F81CAD7B2D007CCE40 /* AudioToolbox.framework */,
+				8805F6FA1CAD7B37007CCE40 /* Foundation.framework */,
+				8805F6FC1CAD7B73007CCE40 /* MessageUI.framework */,
+				8805F6FE1CAD7B7C007CCE40 /* AVFoundation.framework */,
+				8805F7001CAD7BDF007CCE40 /* UIKit.framework */,
+				8805F7021CAD7BE6007CCE40 /* CoreGraphics.framework */,
+			);
+			name = Resources;
+			sourceTree = "<group>";
+		};
+		8805F7111CAD7FB6007CCE40 /* UniMag */ = {
+			isa = PBXGroup;
+			children = (
+				8805F7101CAD7F6D007CCE40 /* uniMag.h */,
+				8805F7081CAD7DA3007CCE40 /* UMCardData.h */,
+				8805F7091CAD7DAA007CCE40 /* UMCardData.m */,
+				8805F70E1CAD7F5F007CCE40 /* IDTECH_UniMag.a */,
+			);
+			name = UniMag;
+			sourceTree = "<group>";
+		};
+		8805F7121CAD8015007CCE40 /* BluePay */ = {
+			isa = PBXGroup;
+			children = (
+				886A9B771CA07E500074DA81 /* BluePayResponse.m */,
+				886A9B761CA07E500074DA81 /* BluePayResponse.h */,
+				886A9B751CA07E500074DA81 /* BluePayRequest.m */,
+				886A9B741CA07E500074DA81 /* BluePayRequest.h */,
+				886A9B721CA07E500074DA81 /* BluePay.h */,
+				886A9B731CA07E500074DA81 /* BluePay.m */,
+			);
+			name = BluePay;
+			sourceTree = "<group>";
+		};
+		8805F7131CAD8034007CCE40 /* Other */ = {
+			isa = PBXGroup;
+			children = (
+				886A9B7C1CA07E500074DA81 /* UIMonthYearPicker.m */,
+				886A9B7B1CA07E500074DA81 /* UIMonthYearPicker.h */,
+			);
+			name = Other;
+			sourceTree = "<group>";
+		};
+		8805F7141CAD8057007CCE40 /* View Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				886A9B7E1CA07E500074DA81 /* ApplePayController.m */,
+				886A9B7D1CA07E500074DA81 /* ApplePayController.h */,
+				886A9B961CA1B7FC0074DA81 /* ProcessController.h */,
+				886A9B941CA1B7EA0074DA81 /* ProcessController.m */,
+				8805F70C1CAD7EB1007CCE40 /* SwipeController.m */,
+				8805F70B1CAD7EAA007CCE40 /* SwipeController.h */,
+			);
+			name = "View Controllers";
+			sourceTree = "<group>";
+		};
+		883849241C99C17D00B6BC81 = {
+			isa = PBXGroup;
+			children = (
+				886A9B8C1CA080CE0074DA81 /* LaunchScreen.xib */,
+				886A9B8F1CA080D20074DA81 /* Main.storyboard */,
+				886A9B8B1CA07F000074DA81 /* BluePay iOS SDK.entitlements */,
+				886A9B6D1CA07E500074DA81 /* AppDelegate.h */,
+				886A9B6E1CA07E500074DA81 /* AppDelegate.m */,
+				886A9B6F1CA07E500074DA81 /* Assets.xcassets */,
+				886A9B781CA07E500074DA81 /* Images.xcassets */,
+				886A9B791CA07E500074DA81 /* Info.plist */,
+				886A9B7A1CA07E500074DA81 /* main.m */,
+				8805F7141CAD8057007CCE40 /* View Controllers */,
+				8805F7131CAD8034007CCE40 /* Other */,
+				8805F7121CAD8015007CCE40 /* BluePay */,
+				8805F7111CAD7FB6007CCE40 /* UniMag */,
+				8805F7061CAD7CA5007CCE40 /* Resources */,
+				8838492E1C99C17D00B6BC81 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		8838492E1C99C17D00B6BC81 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				8838492D1C99C17D00B6BC81 /* BluePay iOS SDK.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		8838492C1C99C17D00B6BC81 /* BluePay iOS SDK */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 883849441C99C17D00B6BC81 /* Build configuration list for PBXNativeTarget "BluePay iOS SDK" */;
+			buildPhases = (
+				883849291C99C17D00B6BC81 /* Sources */,
+				8838492A1C99C17D00B6BC81 /* Frameworks */,
+				8838492B1C99C17D00B6BC81 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "BluePay iOS SDK";
+			productName = "BluePay iOS SDK";
+			productReference = 8838492D1C99C17D00B6BC81 /* BluePay iOS SDK.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		883849251C99C17D00B6BC81 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0720;
+				ORGANIZATIONNAME = "BluePay Processing, Inc.";
+				TargetAttributes = {
+					8838492C1C99C17D00B6BC81 = {
+						CreatedOnToolsVersion = 7.2;
+						DevelopmentTeam = 4JCW235225;
+						SystemCapabilities = {
+							com.apple.OMC = {
+								enabled = 1;
+							};
+						};
+					};
+				};
+			};
+			buildConfigurationList = 883849281C99C17D00B6BC81 /* Build configuration list for PBXProject "BluePay iOS SDK" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 883849241C99C17D00B6BC81;
+			productRefGroup = 8838492E1C99C17D00B6BC81 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				8838492C1C99C17D00B6BC81 /* BluePay iOS SDK */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		8838492B1C99C17D00B6BC81 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				886A9B911CA080D20074DA81 /* Main.storyboard in Resources */,
+				886A9B861CA07E500074DA81 /* Images.xcassets in Resources */,
+				886A9B801CA07E500074DA81 /* Assets.xcassets in Resources */,
+				886A9B8E1CA080CE0074DA81 /* LaunchScreen.xib in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		883849291C99C17D00B6BC81 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				886A9B8A1CA07E500074DA81 /* ApplePayController.m in Sources */,
+				886A9B951CA1B7EA0074DA81 /* ProcessController.m in Sources */,
+				886A9B881CA07E500074DA81 /* main.m in Sources */,
+				886A9B831CA07E500074DA81 /* BluePay.m in Sources */,
+				886A9B851CA07E500074DA81 /* BluePayResponse.m in Sources */,
+				886A9B7F1CA07E500074DA81 /* AppDelegate.m in Sources */,
+				8805F70A1CAD7DAA007CCE40 /* UMCardData.m in Sources */,
+				8805F70D1CAD7EB1007CCE40 /* SwipeController.m in Sources */,
+				886A9B841CA07E500074DA81 /* BluePayRequest.m in Sources */,
+				886A9B891CA07E500074DA81 /* UIMonthYearPicker.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		886A9B8C1CA080CE0074DA81 /* LaunchScreen.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				886A9B8D1CA080CE0074DA81 /* Base */,
+			);
+			name = LaunchScreen.xib;
+			sourceTree = "<group>";
+		};
+		886A9B8F1CA080D20074DA81 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				886A9B901CA080D20074DA81 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		883849421C99C17D00B6BC81 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.2;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		883849431C99C17D00B6BC81 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		883849451C99C17D00B6BC81 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = "Brand Assets";
+				CODE_SIGN_ENTITLEMENTS = "BluePay iOS SDK/BluePay iOS SDK.entitlements";
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				ENABLE_BITCODE = NO;
+				INFOPLIST_FILE = "BluePay iOS SDK/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/BluePay",
+					iOS,
+					SDK,
+				);
+				ONLY_ACTIVE_ARCH = NO;
+				OTHER_LDFLAGS = "";
+				PRODUCT_BUNDLE_IDENTIFIER = "BluePay.iOS-SDK";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
+				TARGETED_DEVICE_FAMILY = 1;
+				VALID_ARCHS = "arm64 armv7 armv7s armv6";
+			};
+			name = Debug;
+		};
+		883849461C99C17D00B6BC81 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = "Brand Assets";
+				CODE_SIGN_ENTITLEMENTS = "BluePay iOS SDK/BluePay iOS SDK.entitlements";
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				ENABLE_BITCODE = NO;
+				INFOPLIST_FILE = "BluePay iOS SDK/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/BluePay",
+					iOS,
+					SDK,
+				);
+				ONLY_ACTIVE_ARCH = NO;
+				OTHER_LDFLAGS = "";
+				PRODUCT_BUNDLE_IDENTIFIER = "BluePay.iOS-SDK";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
+				TARGETED_DEVICE_FAMILY = 1;
+				VALID_ARCHS = "arm64 armv7 armv7s armv6";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		883849281C99C17D00B6BC81 /* Build configuration list for PBXProject "BluePay iOS SDK" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				883849421C99C17D00B6BC81 /* Debug */,
+				883849431C99C17D00B6BC81 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		883849441C99C17D00B6BC81 /* Build configuration list for PBXNativeTarget "BluePay iOS SDK" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				883849451C99C17D00B6BC81 /* Debug */,
+				883849461C99C17D00B6BC81 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 883849251C99C17D00B6BC81 /* Project object */;
+}
