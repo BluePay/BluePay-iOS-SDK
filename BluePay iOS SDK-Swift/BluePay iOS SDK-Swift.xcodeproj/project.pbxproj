@@ -193,6 +193,9 @@
 						CreatedOnToolsVersion = 7.3;
 						DevelopmentTeam = 4JCW235225;
 						SystemCapabilities = {
+							com.apple.InAppPurchase = {
+								enabled = 0;
+							};
 							com.apple.OMC = {
 								enabled = 1;
 							};
