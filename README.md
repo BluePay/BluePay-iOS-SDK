@@ -34,10 +34,13 @@ Also, if you are planning to process Apple Pay payments, you will need to input 
     
 ## Additional App Setup For Apple Pay
 The sample iOS app requires the shipping and billing information for the customer. To change this, edit the following lines in your ApplePayController.m/ApplePayController.swift file.<br>
-`@IBAction func buttonTapped(sender: UIButton) {`<br>
-`...`<br>
-<b>`request.requiredShippingAddressFields = .All`<br></b>
-<b>`request.requiredBillingAddressFields = .All`<br></b>
+
+```
+@IBAction func buttonTapped(sender: UIButton) {
+...
+request.requiredShippingAddressFields = .All
+request.requiredBillingAddressFields = .All
+```
 
 Also make sure that the currency code, country, and card types that you accept are included as well
 
