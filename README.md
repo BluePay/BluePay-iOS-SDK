@@ -20,7 +20,7 @@ After you've set up the appropriate entitlement for Apple Pay in your iOS app, t
 `}`<br>
 
 `class BluePay {`<br>
-    <b>`var bluepaySetup = [String: String]()`<br>
+    `var bluepaySetup = [String: String]()`<br>
     <b>`var AccountID: String = "Merchant's Account ID Here" // 12 digit Account ID`<br></b>
     <b>`var SecretKey: String = "Merchant's Secret Key Here" // 32 digit Secret Key`<br></b>
     <b>`var TransMode: String = "TEST" // TEST or LIVE mode`<br></b>
