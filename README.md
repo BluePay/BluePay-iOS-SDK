@@ -37,22 +37,23 @@ The sample iOS app requires the shipping and billing information for the custome
 
 ```
 @IBAction func buttonTapped(sender: UIButton) {
-...
-request.requiredShippingAddressFields = .All
-request.requiredBillingAddressFields = .All
+    ...
+    request.requiredShippingAddressFields = .All
+    request.requiredBillingAddressFields = .All
 ```
 
 Also make sure that the currency code, country, and card types that you accept are included as well
 
 ```
-request.countryCode = "US"
-request.currencyCode = "USD"
-request.supportedNetworks = [PKPaymentNetworkAmex, PKPaymentNetworkMasterCard, PKPaymentNetworkVisa]
+    request.countryCode = "US"
+    request.currencyCode = "USD"
+    request.supportedNetworks = [PKPaymentNetworkAmex, PKPaymentNetworkMasterCard, PKPaymentNetworkVisa]
 ```
 
 Finally, don't forget to add the item(s) that your customer is paying for in the PKPaymentRequest<br>
 ```
-request.paymentSummaryItems = [widget1, widget2, total]
+    request.paymentSummaryItems = [widget1, widget2, total]
+}
 ```
 
 ## After a transaction is processed
