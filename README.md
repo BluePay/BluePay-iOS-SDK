@@ -35,12 +35,12 @@ The sample iOS app requires the shipping and billing information for the custome
 
 Also make sure that the currency code, country, and card types that you accept are included as well
 
-`request.countryCode = "US"`<br>
-`request.currencyCode = "USD"`<br>
-`request.supportedNetworks = [PKPaymentNetworkAmex, PKPaymentNetworkMasterCard, PKPaymentNetworkVisa]`<br>
+<b>`request.countryCode = "US"`<br></b>
+<b>`request.currencyCode = "USD"`<br></b>
+<b>`request.supportedNetworks = [PKPaymentNetworkAmex, PKPaymentNetworkMasterCard, PKPaymentNetworkVisa]`<br></b>
 
 Finally, don't forget to add the item(s) that your customer is paying for in the PKPaymentRequest<br>
-`request.paymentSummaryItems = [widget1, widget2, total]`<br>
+<b>`request.paymentSummaryItems = [widget1, widget2, total]`<br></b>
 
 ## After a transaction is processed
 You will get a real-time response back from BluePay when a transaction is processed. This result will be either: approved, declined, or errored. For Apple Pay: if approved, [PKPaymentAuthorizationStatusSuccess](https://developer.apple.com/library/prerelease/ios/documentation/PassKit/Reference/PKPaymentAuthorizationViewControllerDelegate_Ref/index.html#//apple_ref/c/tdef/PKPaymentAuthorizationStatus) is returned. If declined or errored, [PKPaymentAuthorizationStatusFailure](https://developer.apple.com/library/prerelease/ios/documentation/PassKit/Reference/PKPaymentAuthorizationViewControllerDelegate_Ref/index.html#//apple_ref/c/tdef/PKPaymentAuthorizationStatus) is returned.
