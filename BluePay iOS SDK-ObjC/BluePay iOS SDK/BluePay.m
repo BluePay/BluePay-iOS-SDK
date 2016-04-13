@@ -11,10 +11,10 @@
 @implementation BluePay
 
 NSMutableDictionary *bluepaySetup;
-NSString *accountID = @"100013391447";
-NSString *secretKey = @"5YRFNRBCZN/6Y4OPZNWPYDRNAVX7BMMD";
-NSString *transMode = @"TEST";
-NSString *transType = @"SALE";
+NSString *accountID = @"Merchant's Account ID Here"; // 12 digit Account ID
+NSString *secretKey = @"Merchant's Secret Key Here"; // 32 digit Secret Key
+NSString *transMode = @"TEST"; // TEST or LIVE mode
+NSString *transType = @"SALE"; // SALE or AUTH; defaults to SALE unless explicitly specified
 
 - (id)initSetup:(NSString*)transactionType
 {

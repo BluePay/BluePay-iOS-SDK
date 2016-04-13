@@ -49,7 +49,7 @@ UIAlertAction *okAction;
         request.currencyCode = @"USD";
         request.supportedNetworks = @[PKPaymentNetworkAmex, PKPaymentNetworkMasterCard, PKPaymentNetworkVisa];
         request.merchantCapabilities = PKMerchantCapabilityEMV | PKMerchantCapability3DS;
-        request.merchantIdentifier = @"merchant.test.justin";
+        request.merchantIdentifier = @"Your Merchant ID Here";
         request.paymentSummaryItems = @[widget1, widget2, total];
         // Payment will include *all* shipping and billing fields
         request.requiredShippingAddressFields = PKAddressFieldAll;

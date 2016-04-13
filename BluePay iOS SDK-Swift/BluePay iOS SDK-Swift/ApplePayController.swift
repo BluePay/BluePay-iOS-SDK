@@ -33,7 +33,7 @@ class ApplePayController: UIViewController, PKPaymentAuthorizationViewController
             request.currencyCode = "USD"
             request.supportedNetworks = [PKPaymentNetworkAmex, PKPaymentNetworkMasterCard, PKPaymentNetworkVisa]
             request.merchantCapabilities = [PKMerchantCapability.Capability3DS, PKMerchantCapability.CapabilityEMV]
-            request.merchantIdentifier = "merchant.test.justin"
+            request.merchantIdentifier = "Your Merchant ID Here"
             request.paymentSummaryItems = [widget1, widget2, total]
             // Payment will include *all* shipping and billing fields
             request.requiredShippingAddressFields = .All

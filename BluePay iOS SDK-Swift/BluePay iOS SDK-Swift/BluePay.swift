@@ -4,8 +4,8 @@ import AddressBook
 import PassKit
 class BluePay {
     var bluepaySetup = [String: String]()
-    var AccountID: String = "100013391447" // 12 digit Account ID
-    var SecretKey: String = "5YRFNRBCZN/6Y4OPZNWPYDRNAVX7BMMD" // 32 digit Secret Key
+    var AccountID: String = "Merchant's Account ID Here" // 12 digit Account ID
+    var SecretKey: String = "Merchant's Secret Key Here" // 32 digit Secret Key
     var TransMode: String = "TEST" // TEST or LIVE mode
     var TransType: String = "SALE" // SALE or AUTH; defaults to SALE unless explicitly specified
 
