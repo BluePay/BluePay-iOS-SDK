@@ -15,16 +15,18 @@ After you've set up the appropriate entitlement for Apple Pay in your iOS app, t
 - Your transaction mode to process either test or live transactions
 - Your transaction type of Auth or Sale.
 
-`@IBAction func buttonTapped(sender: UIButton) {`<br>
-<b>`request.merchantIdentifier = "Your Merchant ID Here"`<br></b>
-`}`<br>
-
 `class BluePay {`<br>
     `var bluepaySetup = [String: String]()`<br>
     <b>`var AccountID: String = "Merchant's Account ID Here" // 12 digit Account ID`<br></b>
     <b>`var SecretKey: String = "Merchant's Secret Key Here" // 32 digit Secret Key`<br></b>
     <b>`var TransMode: String = "TEST" // TEST or LIVE mode`<br></b>
     <b>`var TransType: String = "SALE" // SALE or AUTH; defaults to SALE unless explicitly specified`<br></b>
+    
+Also, if you are planning to process Apple Pay payments, you will need to input your Merchant Identifier in the ApplePayController.m/ApplePayController.swift file:
+
+`@IBAction func buttonTapped(sender: UIButton) {`<br>
+<b>`request.merchantIdentifier = "Your Merchant ID Here"`<br></b>
+`}`<br>
     
 ## Additional App Setup
 The sample iOS app requires the shipping and billing information for the customer. To change this, edit the following lines.<br>
