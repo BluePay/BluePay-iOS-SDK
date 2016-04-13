@@ -8,8 +8,7 @@ You will need:
 - An Apple Merchant ID (if processing Apple Pay)
 
 ## Usage
-After you've set up the appropriate entitlement in your iOS app, the only thing left to do is to input your BluePay gateway information. In the BluePay.m/BluePay.swift file, you will need to set a few merchant-specific values, namely;
-- Your Apple Merchant ID
+After you've set up the appropriate entitlement in your iOS app, the only thing left to do is to input your BluePay gateway information. In the BluePay.m/BluePay.swift file, you will need to set a few merchant-specific values, namely:
 - Your BluePay gateway Account ID
 - Your BluePay gateway Secret Key
 - Your transaction mode to process either test or live transactions
