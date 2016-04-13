@@ -27,20 +27,20 @@ Also, if you are planning to process Apple Pay payments, you will need to input 
 <b>`request.merchantIdentifier = "Your Merchant ID Here"`<br></b>
 `}`<br>
     
-## Additional App Setup
-The sample iOS app requires the shipping and billing information for the customer. To change this, edit the following lines.<br>
-`- (IBAction)buttonTapped:(UIButton *)sender {`<br>
-`request.requiredShippingAddressFields = PKAddressFieldAll;`<br>
-`request.requiredBillingAddressFields = PKAddressFieldAll;`<br>
+## Additional App Setup For Apple Pay
+The sample iOS app requires the shipping and billing information for the customer. To change this, edit the following lines in your ApplePayController.m/ApplePayController.swift file.<br>
+`@IBAction func buttonTapped(sender: UIButton) {`<br>
+`request.requiredShippingAddressFields = .All`<br>
+`request.requiredBillingAddressFields = .All`<br>
 
 Also make sure that the currency code, country, and card types that you accept are included as well
 
-`request.countryCode = @"US";`<br>
-`request.currencyCode = @"USD";`<br>
-`request.supportedNetworks = @[PKPaymentNetworkAmex, PKPaymentNetworkMasterCard, PKPaymentNetworkVisa];`<br>
+`request.countryCode = "US"`<br>
+`request.currencyCode = "USD"`<br>
+`request.supportedNetworks = [PKPaymentNetworkAmex, PKPaymentNetworkMasterCard, PKPaymentNetworkVisa]`<br>
 
 Finally, don't forget to add the item(s) that your customer is paying for in the PKPaymentRequest<br>
-`request.paymentSummaryItems = @[widget1, widget2, total];`<br>
+`request.paymentSummaryItems = [widget1, widget2, total]`<br>
 
 ## After a transaction is processed
-You will get a real-time response back from BluePay when an Apple Pay transaction is processed. This result will be either: approved, declined, or errored. If approved, [PKPaymentAuthorizationStatusSuccess](https://developer.apple.com/library/prerelease/ios/documentation/PassKit/Reference/PKPaymentAuthorizationViewControllerDelegate_Ref/index.html#//apple_ref/c/tdef/PKPaymentAuthorizationStatus) is returned. If declined or errored, [PKPaymentAuthorizationStatusFailure](https://developer.apple.com/library/prerelease/ios/documentation/PassKit/Reference/PKPaymentAuthorizationViewControllerDelegate_Ref/index.html#//apple_ref/c/tdef/PKPaymentAuthorizationStatus) is returned.
+You will get a real-time response back from BluePay when a transaction is processed. This result will be either: approved, declined, or errored. For Apple Pay: if approved, [PKPaymentAuthorizationStatusSuccess](https://developer.apple.com/library/prerelease/ios/documentation/PassKit/Reference/PKPaymentAuthorizationViewControllerDelegate_Ref/index.html#//apple_ref/c/tdef/PKPaymentAuthorizationStatus) is returned. If declined or errored, [PKPaymentAuthorizationStatusFailure](https://developer.apple.com/library/prerelease/ios/documentation/PassKit/Reference/PKPaymentAuthorizationViewControllerDelegate_Ref/index.html#//apple_ref/c/tdef/PKPaymentAuthorizationStatus) is returned.
