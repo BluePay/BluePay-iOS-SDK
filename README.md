@@ -8,7 +8,7 @@ You will need:
 - A BluePay Gateway account
 
 ## Usage
-After you've set up the appropriate entitlement for Apple Pay in your iOS app, the only thing left to do is to input your BluePay gateway information. In the ViewController.m file, you will need to set a few merchant-specific values, namely;
+After you've set up the appropriate entitlement for Apple Pay in your iOS app, the only thing left to do is to input your BluePay gateway information. In the BluePay.m/BluePay.swift file, you will need to set a few merchant-specific values, namely;
 - Your Apple Merchant ID
 - Your BluePay gateway Account ID
 - Your BluePay gateway Secret Key
@@ -19,14 +19,12 @@ After you've set up the appropriate entitlement for Apple Pay in your iOS app, t
 <b>`request.merchantIdentifier = @"Your Merchant ID here";`<br></b>
 `}`<br>
 
-`- (void)handlePaymentAuthorizationWithPayment:(PKPayment *)payment completion:(void (^)(PKPaymentAuthorizationStatus))completion {`<br>
-`NSDictionary *bluepaySetup = @{`<br>
-        <b>`@"AccountID" : @"Your Account ID here",`<br></b>
-        <b>`@"SecretKey" : @"Your Secret Key here",`<br></b>
-        <b>`@"TransMode" : @"TEST", // Can be either TEST or LIVE`<br></b>
-        <b>`@"TransType" : @"SALE" // Can be either SALE or AUTH`<br></b>
-    `};`<br>
-`}`<br>
+`class BluePay {`<br>
+    <b>`var bluepaySetup = [String: String]()`<br>
+    <b>`var AccountID: String = "Merchant's Account ID Here" // 12 digit Account ID`<br></b>
+    <b>`var SecretKey: String = "Merchant's Secret Key Here" // 32 digit Secret Key`<br></b>
+    <b>`var TransMode: String = "TEST" // TEST or LIVE mode`<br></b>
+    <b>`var TransType: String = "SALE" // SALE or AUTH; defaults to SALE unless explicitly specified`<br></b>
     
 ## Additional App Setup
 The sample iOS app requires the shipping and billing information for the customer. To change this, edit the following lines.<br>
