@@ -598,9 +598,21 @@ static NSString* repr(NSData* byteArray);
     }
     NSArray *names = [track1String componentsSeparatedByString: @"^"];
     NSArray *firstAndLastName = [names[1] componentsSeparatedByString:@"/"];
+    NSString *firstName = @"";
+    NSString *lastName = @"";
+    if ([firstAndLastName count] > 0) {
+        if ([firstAndLastName count] == 1) {
+            firstName = firstAndLastName[0];
+        } else {
+            firstName = firstAndLastName[1];
+            lastName = firstAndLastName[0];
+        }
+    } else {
+        firstName = names[1];
+    }
     NSDictionary *customerInformation = @{
-                                          @"FirstName" : firstAndLastName[1],
-                                          @"LastName" : firstAndLastName[0],
+                                          @"FirstName" : firstName,
+                                          @"LastName" : lastName,
                                           @"Street" : addr1.text,
                                           @"City" : city.text,
                                           @"State" : state.text,
