@@ -7,7 +7,7 @@ This repository contains a sample iOS app to be used to accept credit card (card
 
 You will need:
 - A BluePay Gateway account
-- An Apple Merchant ID ~(if processing Apple Pay)~
+- ~An Apple Merchant ID (if processing Apple Pay)~
 
 ## Usage
 After you've set up the appropriate entitlement in your iOS app, the only thing left to do is to input your BluePay gateway information. In the BluePay.m/BluePay.swift file, you will need to set a few merchant-specific values, namely:
@@ -25,7 +25,7 @@ class BluePay {
     var TransType: String = "SALE" // SALE or AUTH; defaults to SALE unless explicitly specified
 ```
     
-Also, if you are planning to process Apple Pay payments, you will need to input your Merchant Identifier in the ApplePayController.m/ApplePayController.swift file:
+~Also, if you are planning to process Apple Pay payments, you will need to input your Merchant Identifier in the ApplePayController.m/ApplePayController.swift file:~
 
 ```swift
 @IBAction func buttonTapped(sender: UIButton) {
