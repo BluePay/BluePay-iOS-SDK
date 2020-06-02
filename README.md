@@ -1,12 +1,13 @@
 # BluePay-iOS-SDK
-BluePay iOS SDK for credit card and Apple Pay payments
+BluePay iOS SDK for credit card ~and Apple Pay~ payments
+Note: Apple Pay is no longer supported on the BluePay gateway
 
 ## Overview
-This repository contains a sample iOS app to be used to accept credit card (card-present and card-not-present) as well as Apple Pay payments through a BluePay gateway account as well as an SDK to handle said payments. Included in this repository are sample projects for both Objective-C and Swift. These projects were built and tested on iOS 9.3. For the swiped transactions, the SDK works with the IDTech Unimag II and Shuttle devices.
+This repository contains a sample iOS app to be used to accept credit card (card-present and card-not-present) ~as well as Apple Pay~ payments through a BluePay gateway account as well as an SDK to handle said payments. Included in this repository are sample projects for both Objective-C and Swift. These projects were built and tested on iOS 9.3. For the swiped transactions, the SDK works with the IDTech Unimag II and Shuttle devices.
 
 You will need:
 - A BluePay Gateway account
-- An Apple Merchant ID (if processing Apple Pay)
+- An Apple Merchant ID ~(if processing Apple Pay)~
 
 ## Usage
 After you've set up the appropriate entitlement in your iOS app, the only thing left to do is to input your BluePay gateway information. In the BluePay.m/BluePay.swift file, you will need to set a few merchant-specific values, namely:
